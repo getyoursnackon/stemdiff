@@ -10,7 +10,7 @@ struct StemDifferApp: App {
         .windowStyle(.titleBar)
         .windowToolbarStyle(.unified)
         .commands {
-            // Replace the default About menu
+            // use native about panel
             CommandGroup(replacing: .appInfo) {
                 Button("About StemDiffer") {
                     NSApplication.shared.orderFrontStandardAboutPanel()

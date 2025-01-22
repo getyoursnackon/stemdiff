@@ -31,7 +31,7 @@ struct FileInfo: Identifiable {
     }
     
     var nameWithoutPrefix: String {
-        // First remove any excluded strings
+        // strip excluded strings
         var processedName = name
         if let range = name.range(of: "@[^ ]+ ", options: .regularExpression) {
             processedName = String(name[range.upperBound...])
@@ -59,7 +59,7 @@ struct ContentView: View {
                 .filter { !$0.isEmpty }
             
             for exclude in excludeStrings {
-                // First try exact match
+                // try exact match
                 if processedName.localizedCaseInsensitiveContains(exclude) {
                     processedName = processedName.replacingOccurrences(
                         of: exclude,
@@ -125,7 +125,7 @@ struct ContentView: View {
                 
                 ScrollView {
                     HStack(alignment: .top, spacing: 0) {
-                        // Left Column - Original Files
+                        // left column
                         VStack(alignment: .leading, spacing: 0) {
                             Text("Files only in original folder")
                                 .font(.system(size: 13, weight: .medium))
@@ -148,12 +148,12 @@ struct ContentView: View {
                         }
                         .frame(maxWidth: .infinity)
                         
-                        // Divider
+                        // separator
                         Rectangle()
                             .fill(Color(NSColor.separatorColor))
                             .frame(width: 1)
                         
-                        // Right Column - New Files
+                        // right column
                         VStack(alignment: .leading, spacing: 0) {
                             Text("Files only in new folder")
                                 .font(.system(size: 13, weight: .medium))
@@ -242,20 +242,20 @@ struct ContentView: View {
             return FileInfo(name: processFileName(url.lastPathComponent), size: Int64(fileSize), modificationDate: modDate)
         }
         
-        // Compare counts
+        // compare counts
         if files1.count != files2.count {
             differences.append("Different number of files: \(files1.count) vs \(files2.count)")
             differences.append("")
         }
         
-        // Create dictionaries with processed names for comparison
+        // build name lookup tables
         let files1Dict = Dictionary(grouping: files1, by: { $0.nameWithoutPrefix })
         let files2Dict = Dictionary(grouping: files2, by: { $0.nameWithoutPrefix })
         
         let names1 = Set(files1Dict.keys)
         let names2 = Set(files2Dict.keys)
         
-        // Find unique files
+        // find files unique to each folder
         let uniqueToFolder1 = names1.subtracting(names2)
         let uniqueToFolder2 = names2.subtracting(names1)
         
@@ -279,7 +279,7 @@ struct ContentView: View {
             differences.append("")
         }
         
-        // Compare common files
+        // check common files
         let commonNames = names1.intersection(names2)
         var hasDifferences = false
         
@@ -300,7 +300,7 @@ struct ContentView: View {
                         hasDifferences = true
                     }
                     
-                    // Check sizes
+                    // check sizes
                     if file1.size != file2.size {
                         if !sizeDifferences {
                             differences.append("Size mismatches")
