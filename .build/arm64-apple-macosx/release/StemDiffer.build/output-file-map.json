@@ -1,0 +1,17 @@
+{
+  "": {
+    "dependencies": "/Users/tom/Projects/StemDiffer/.build/arm64-apple-macosx/release/StemDiffer.build/StemDiffer.d",
+    "object": "/Users/tom/Projects/StemDiffer/.build/arm64-apple-macosx/release/StemDiffer.build/StemDiffer.o",
+    "swift-dependencies": "/Users/tom/Projects/StemDiffer/.build/arm64-apple-macosx/release/StemDiffer.build/master.swiftdeps"
+  },
+  "/Users/tom/Projects/StemDiffer/Sources/StemDiffer/ContentView.swift": {
+    "object": "/Users/tom/Projects/StemDiffer/.build/arm64-apple-macosx/release/StemDiffer.build/ContentView.swift.o",
+    "swiftmodule": "/Users/tom/Projects/StemDiffer/.build/arm64-apple-macosx/release/StemDiffer.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/tom/Projects/StemDiffer/.build/arm64-apple-macosx/release/StemDiffer.build/ContentView.swiftdeps"
+  },
+  "/Users/tom/Projects/StemDiffer/Sources/StemDiffer/StemDifferApp.swift": {
+    "object": "/Users/tom/Projects/StemDiffer/.build/arm64-apple-macosx/release/StemDiffer.build/StemDifferApp.swift.o",
+    "swiftmodule": "/Users/tom/Projects/StemDiffer/.build/arm64-apple-macosx/release/StemDiffer.build/StemDifferApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/tom/Projects/StemDiffer/.build/arm64-apple-macosx/release/StemDiffer.build/StemDifferApp.swiftdeps"
+  }
+}
