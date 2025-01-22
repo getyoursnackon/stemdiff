@@ -1,7 +1,0 @@
-version: "Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)"
-options: "3969a59158b27baa73bf4b9d3b9af7881ebd0f487006d5f1e84cf97ec41955e3"
-build_start_time: [1737517277, 619314000]
-build_end_time: [1737517281, 952924000]
-inputs:
-  "/Users/tom/Projects/StemDiffer/Sources/StemDiffer/ContentView.swift": [1737516967, 923807480]
-  "/Users/tom/Projects/StemDiffer/Sources/StemDiffer/StemDifferApp.swift": [1737517120, 562510899]
