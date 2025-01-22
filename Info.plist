@@ -18,6 +18,8 @@
     <string>????</string>
     <key>CFBundleExecutable</key>
     <string>StemDiffer</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
     <key>NSHumanReadableCopyright</key>
     <string>© 2024 Snackworld, Inc. All rights reserved.</string>
     <key>LSMinimumSystemVersion</key>
