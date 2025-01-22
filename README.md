@@ -2,6 +2,18 @@
 
 a simple macos app to compare two folders of audio stems, helping identify differences in file names, counts, and sizes.
 
+## about
+
+stemdiff helps you compare two folders of audio stems to spot any differences. it's useful when:
+- checking if all stems were exported correctly
+- verifying if two versions of a project have the same stems
+- finding stems that might have changed size or name
+
+the app shows you:
+- which files exist in one folder but not the other
+- any size differences between matching files
+- files with different prefixes
+
 ## features
 
 - drag and drop folder selection
