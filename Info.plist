@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>StemDiffer</string>
+    <key>CFBundleDisplayName</key>
+    <string>StemDiffer</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.snackworld.stemdiff</string>
+    <key>CFBundleVersion</key>
+    <string>1.0.5</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.5</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleSignature</key>
+    <string>????</string>
+    <key>CFBundleExecutable</key>
+    <string>StemDiffer</string>
+    <key>NSHumanReadableCopyright</key>
+    <string>© 2024 Snackworld, Inc. All rights reserved.</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>12.0</string>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.music</string>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+</dict>
+</plist> 
