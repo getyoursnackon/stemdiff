@@ -11,20 +11,31 @@ a simple macos app to compare two folders of audio stems, helping identify diffe
   - files present in one folder but not the other
   - size differences between files with the same name
 
-## building and installing
+## installation
 
-to build and install the app:
+### option 1: download the installer
+1. download the latest release from the [releases page](https://github.com/getyoursnackon/stemdiff/releases)
+2. double-click the downloaded `StemDiffer.pkg` file
+3. follow the installer steps
+4. launch StemDiffer from your Applications folder
 
+### option 2: build from source
+requirements:
+- xcode 13.0 or later
+- command line tools (run `xcode-select --install` in terminal)
+- swift (comes with xcode, but run `xcode-select -p` to verify xcode path)
+
+steps:
+1. clone the repository:
 ```bash
-rm -rf .build && swift build -c release && mkdir -p StemDiffer.app/Contents/MacOS && cp .build/release/StemDiffer StemDiffer.app/Contents/MacOS/ && rm -rf /Applications/StemDiffer.app && cp -R StemDiffer.app /Applications/
+git clone https://github.com/getyoursnackon/stemdiff.git
+cd stemdiff
 ```
 
-this command will:
-1. clean the build directory
-2. build the app in release mode
-3. create the app bundle structure
-4. copy the built binary into the app bundle
-5. install the app to your applications folder
+2. build and install:
+```bash
+./build.sh
+```
 
 ## usage
 
@@ -35,5 +46,5 @@ this command will:
 
 ## requirements
 
-- macos 12.0 or later
+- macos 11.0 or later (big sur)
 - xcode 13.0 or later (for development) 
